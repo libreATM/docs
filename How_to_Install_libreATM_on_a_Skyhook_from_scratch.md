@@ -129,10 +129,11 @@ When asked, put a password for the MySQL root. You'll need it later.
 Download libreATM server
 ~~~
     cd /root
-    git clone https://github.com/libreATM/libreATM-server/
-    mv /root/libreATM-server/btc/ /var/www/
+    git clone https://github.com/libreATM/server/
+    mkdir /var/www/btc
+    mv /root/server/* /var/www/btc/
     perl -pe 's/\*/192.168.42.45/g' /etc/apache2/ports.conf  > /tmp/p ; mv /tmp/p /etc/apache2/ports.conf
-    mv /root/libreATM-server/libreATM.apache /etc/apache2/sites-available/libreATM
+    mv /var/www/btc/libreATM.apache /etc/apache2/sites-available/libreATM
 ~~~
 
 Create the logs directory:
@@ -176,7 +177,7 @@ Allow www-data to access the usb-serial port, webserver directories and shutdown
 ###  MySQL config ###
 Create a new skyhook user without password and a database, here you need the MySQL root user password:
 ~~~
-    cd /root/libreATM-server/
+    cd /var/www/btc/database
     mysql -u root -p -h localhost < libreATM-database.sql
     mysql -u root -p -h localhost < libreATM-tables.sql
 ~~~
