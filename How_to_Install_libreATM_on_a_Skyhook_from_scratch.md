@@ -180,6 +180,6 @@ Create a new skyhook user without password and a database, here you need the MyS
 ### Currency ###
 If your ATM use another currency other than the euro, you have to follow the [ATM Currency section on the "How to localize libreATM document"](How_to_localize_libreATM.md)
 
-## Tablet set-up ##
-Continue with the [tablet set-up](How_to_Install_libreATM_on_a_Nexus7_from_scratch.md)
+## Tablet setup ##
+Continue with the [tablet setup](How_to_Install_libreATM_on_a_Nexus7_from_scratch.md)
 

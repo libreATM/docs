@@ -1,4 +1,4 @@
-# LibreATM Nexus 7 set-up #
+# LibreATM Nexus 7 setup #
 
 > Santiago Crespo 2015 WTFPL
 
@@ -89,8 +89,8 @@ Reboot the tablet.
 * Settings > Admin > Settings Password
 
 ## Tests and fun ##
-* Do the [Shutdown procedure.](https://github.com/libreATM/docs/blob/master/docs/How_to_Power_ON_and_Shutdown_a_libreATM.md)
-* Do the [Power-ON procedure.](https://github.com/libreATM/docs/blob/master/docs/How_to_Power_ON_and_Shutdown_a_libreATM.md)
+* Do the [Shutdown procedure.](How_to_Power_ON_and_Shutdown_a_libreATM.md)
+* Do the [Power-ON procedure.](How_to_Power_ON_and_Shutdown_a_libreATM.md)
 * Buy some Bitcoin using fiat, send me a tip if it works ;) [14qpgjQmWSnHbrZKLTJCvhX9sCpRgr1Hw2](https://blockchain.info/address/14qpgjQmWSnHbrZKLTJCvhX9sCpRgr1Hw2)
 
 
