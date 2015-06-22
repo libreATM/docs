@@ -1,1 +1,3 @@
-# docs
+# Docs
+
+Documentation for the libreATM
