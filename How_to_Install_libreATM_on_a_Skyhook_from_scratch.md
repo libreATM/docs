@@ -2,8 +2,6 @@
 
 > Santiago Crespo 2015 WTFPL
 
-[The official skyhook docs](http://skyhookproject.com/support)
-
 ## Burning the image to the SD ##
 Insert the SD card on your computer (4Gb or more. Better if class 10).
 ~~~
@@ -34,8 +32,8 @@ raspi-config is loaded on first boot. Use this options:
 * Reboot? yes
 
 ## System configuration ##
-Unplug the keyboard and display. Plug the tablet and bill validator USB cables.
-Connect to the raspberry using ssh from now on.
+* Unplug the keyboard and display. Plug the tablet and bill validator USB cables.
+* Connect to the raspberry using ssh.
 
 ###  Firmware update ###
 ~~~
@@ -107,7 +105,6 @@ Disconnect and try to connect again using ssh, remove the offending key line on 
 ~~~    
 
 ## ATM SERVER ##
-
 ###  USB tethering ###
 ~~~
     echo "
@@ -137,11 +134,13 @@ Download libreATM server
     perl -pe 's/\*/192.168.42.45/g' /etc/apache2/ports.conf  > /tmp/p ; mv /tmp/p /etc/apache2/ports.conf
     mv /root/libreATM-server/libreATM.apache /etc/apache2/sites-available/libreATM
 ~~~
+
 Create the logs directory:
 ~~~
     mkdir /home/pi/phplog
     chown www-data /home/pi/phplog
 ~~~
+
 Activate site and mod_rewrite, restart apache:
 ~~~
     a2dissite default
@@ -151,6 +150,7 @@ Activate site and mod_rewrite, restart apache:
 	echo "Buy some Bitcoin" > /var/www/index.html
     service apache2 restart
 ~~~
+
 Install font-awesome
 ~~~
     cd /var/www/btc/assets/
@@ -159,10 +159,12 @@ Install font-awesome
     rm -rf font-awesome
     mv font-awesome-4.3.0 font-awesome
 ~~~
+
 Create /tmp_disk/
 ~~~
     mkdir -p /tmp_disk
 ~~~
+
 Allow www-data to access the usb-serial port, webserver directories and shutdown command:
 ~~~
     addgroup www-data dialout
@@ -170,6 +172,7 @@ Allow www-data to access the usb-serial port, webserver directories and shutdown
     chown www-data /tmp_disk
     chmod u+s /sbin/shutdown
 ~~~
+
 ###  MySQL config ###
 Create a new skyhook user without password and a database, here you need the MySQL root user password:
 ~~~
@@ -177,6 +180,7 @@ Create a new skyhook user without password and a database, here you need the MyS
     mysql -u root -p -h localhost < libreATM-database.sql
     mysql -u root -p -h localhost < libreATM-tables.sql
 ~~~
+
 ### Currency ###
 If your ATM use another currency other than the euro, you have to follow the [ATM Currency section on the "How to localize libreATM document"](How_to_localize_libreATM.md)
 
