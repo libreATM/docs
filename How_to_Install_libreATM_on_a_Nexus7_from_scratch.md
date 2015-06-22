@@ -107,7 +107,7 @@ Reboot the tablet.
 * Copy this script to /data/local/userinit.sh on the tablet and do chmod 555 /data/local/userinit.sh
 
 ~~~
-\#!/system/bin/sh 
+#!/system/bin/sh 
 setprop sys.usb.config rndis,adb
 service call connectivity 30 i32 1
 ifconfig rndis0 192.168.42.1
