@@ -45,7 +45,7 @@ Change "pi" user password
 ~~~
     password
 ~~~
-**Change new-password** for the actual new mysql root password
+**Change** *new-password* for the actual new mysql root password
 ~~~
     echo 'update user set Password=PASSWORD("new-password") WHERE User="root";flush privileges;' > /tmp/mysqlpass.sql
     mysql -u root --password=password mysql < /tmp/mysqlpass.sql
