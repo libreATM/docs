@@ -38,6 +38,6 @@ A workaround for that problem is to enable the powersave CPU governor:
 
 * Settings > Performance > Processor > CPU Governor > powersave
 
-And set brightness to half (or low).
+And set brightness to middle (or low).
 
 This way the tablet is able to keep the battery at full charge.
