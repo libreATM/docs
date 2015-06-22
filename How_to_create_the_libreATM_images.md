@@ -9,9 +9,11 @@ Follow this instructions [How to install libreATM on a Skyhook from scratch](How
 ## Generate the image ##
 
 Change /dev/mmcblk0 to the name of your actual SD card device:
-    sudo -s
-    SD_CARD=/dev/mmcblk0
-    mount | grep $SD_CARD | awk '{print "umount "$1}' | sh
-    dd if=$SD_CARD of=libreATM_0.1-EUR.img bs=1024 count=3081016
+~~~
+sudo -s
+SD_CARD=/dev/mmcblk0
+mount | grep $SD_CARD | awk '{print "umount "$1}' | sh
+dd if=$SD_CARD of=libreATM_0.1-EUR.img bs=1024 count=3081016
+~~~
 
 

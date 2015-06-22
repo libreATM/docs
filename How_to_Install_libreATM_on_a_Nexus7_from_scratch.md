@@ -34,25 +34,34 @@
 
 ## Automatic power-on ##
 Connect to the raspberry pi
-    sudo -s
-    apt-get install p7zip-full
-
+~~~
+sudo -s
+apt-get install p7zip-full
+~~~
 Download [adb_fastboot_pi.7z](http://forum.xda-developers.com/showthread.php?t=2047891)
-    cd /usr/local/bin
-    wget https://github.com/libreATM/libreATM-adb-rpi/raw/master/adb_fastboot_pi.7z
-    7z x adb_fastboot_pi.7z
-    rm adb_fastboot_pi.7z
+
+~~~
+cd /usr/local/bin
+wget https://github.com/libreATM/libreATM-adb-rpi/raw/master/adb_fastboot_pi.7z
+7z x adb_fastboot_pi.7z
+rm adb_fastboot_pi.7z
+~~~
 
 Reboot the tablet into recovery mode. From the raspberry, do:
-    adb reboot recovery
-
+~~~
+adb reboot recovery
+~~~
 On the tablet mark "Always allow from this computer" and click OK
 
 Unlock bootloader, press the power button once to select "yes"
-    fastboot oem unlock
+~~~
+fastboot oem unlock
+~~~
 
 Sets the device to auto power on instead of charging:
-    fastboot oem off-mode-charge 0
+~~~
+fastboot oem off-mode-charge 0
+~~~
 
 Reboot the tablet.
 
