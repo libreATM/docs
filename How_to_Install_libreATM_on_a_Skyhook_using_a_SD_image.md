@@ -2,6 +2,10 @@
 
 > Santiago Crespo 2015 WTFPL
 
+This instructions assume that you have root access to a Linux machine and basic Linux command-line skills.
+
+It is possible to do this from Windows using Win32DiskImager to burn the image and putty to connect using ssh.
+
 ## Burning the image to the SD ##
 Insert the SD card on your computer (4Gb or more. Better if class 10).
 
