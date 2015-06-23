@@ -10,8 +10,9 @@ Connect to the raspberry using ssh.
 * Internationalisation Options > Change Timezone
 * Internationalisation Options > Change Keyboard Layout
 * Finish
-* Reboot? yes
-
+~~~
+    reboot
+~~~
 ## ATM Currency ##
 Change USD to match your currency
 ~~~
