@@ -190,6 +190,9 @@ Create a new skyhook user without password and a database, here you need the MyS
     mysql -u root -p -h localhost < libreATM-tables.sql
 ~~~
 
+##  **OPTIONAL** import enc.json ##
+Copy your enc.json file to /var/www/btc/
+
 ### Currency ###
 If your ATM use another currency other than the euro, you have to follow the [ATM Currency section on the "How to localize libreATM document"](How_to_localize_libreATM.md)
 

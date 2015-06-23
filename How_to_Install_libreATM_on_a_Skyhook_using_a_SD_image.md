@@ -76,6 +76,9 @@ Update, dist-upgrade and clean:
     aptitude update && aptitude dist-upgrade -y && aptitude clean
 ~~~
 
+##  **OPTIONAL** import enc.json ##
+Copy your enc.json file to /var/www/btc/
+
 ## Tablet set-up ##
 Continue with the [tablet set-up](How_to_Install_libreATM_on_a_Nexus7_from_scratch.md)
 
