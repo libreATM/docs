@@ -126,12 +126,11 @@ When asked, put a password for the MySQL root. You'll need it later.
     apt-get install -y apache2 libapache2-mod-php5 mysql-server php5-mysql php5-curl python-crypto php5-mcrypt
 ~~~
 ###  Apache config ###
-Download libreATM server
+Download and install libreATM server
 ~~~
-    mkdir /var/www/btc
     cd /var/www/
     git clone https://github.com/libreATM/server/
-    mv server btc
+    mv server/ btc/
     perl -pe 's/\*/192.168.42.45/g' /etc/apache2/ports.conf  > /tmp/p ; mv /tmp/p /etc/apache2/ports.conf
     mv /var/www/btc/libreATM.apache /etc/apache2/sites-available/libreATM
 ~~~
