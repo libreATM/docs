@@ -159,13 +159,14 @@ Activate site and mod_rewrite, restart apache:
     service apache2 restart
 ~~~
 
-Install font-awesome
+Install font-awesome and jsqrcode
 ~~~
     cd /var/www/btc/assets/
     wget https://fortawesome.github.io/Font-Awesome/assets/font-awesome-4.3.0.zip
     unzip font-awesome-4.3.0.zip
     rm -rf font-awesome
     mv font-awesome-4.3.0 font-awesome
+    git clone https://github.com/LazarSoft/jsqrcode
 ~~~
 
 Create /tmp_disk/
