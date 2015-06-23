@@ -15,7 +15,7 @@ Find the device name (examples: /dev/sdb /dev/mmcblk0 )
 ~~~
 **CHANGE /dev/device** to the actual device name!
 
-**CHANGE libreATM_0.1-EUR.img** to libreATM_0.1-USD.img if your ATM accepts USD
+**CHANGE** libreATM_0.1-**EUR**.img to libreATM_0.1-**USD**.img if you want the USD version.
 ~~~
     SD_CARD=/dev/device
 # Umount all SD_CARD partitions
