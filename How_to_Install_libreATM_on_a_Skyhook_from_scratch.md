@@ -55,9 +55,9 @@ Remove rpcbind, nfs-common, wolfram and other propietary software (667 MB):
     aptitude purge -y rpcbind wolfram-engine oracle-java8-jdk pistore
 ~~~
 
-Remove proprietary wireless firmware:
+Remove proprietary wireless firmware, wpasupplicant and wireless-tools:
 ~~~
-    aptitude purge -y firmware-atheros firmware-brcm80211 firmware-libertas  firmware-ralink firmware-realtek
+    aptitude purge -y firmware-atheros firmware-brcm80211 firmware-libertas  firmware-ralink firmware-realtek wpasupplicant wireless-tools
 ~~~
 
 Disable unwanted repos:
