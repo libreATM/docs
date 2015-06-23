@@ -90,6 +90,7 @@ fastboot oem off-mode-charge 0
 ## Tests and fun ##
 * Do the [Shutdown procedure.](How_to_Power_ON_and_Shutdown_a_libreATM.md)
 * Do the [Power-ON procedure.](How_to_Power_ON_and_Shutdown_a_libreATM.md)
+* **IMPORTANT**: The first time you try to buy bitcoin after the installation, the ATM may eat your bill. Check your email, blockchain.info may have sent to you a verification link.
 * Buy some Bitcoin using fiat, send me a tip if it works ;) [1NmGuvMJnQ393oz9AS7tBAvJYNNQz5TfBC](https://blockchain.info/address/1NmGuvMJnQ393oz9AS7tBAvJYNNQz5TfBC)
 
 
