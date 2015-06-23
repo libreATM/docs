@@ -128,10 +128,10 @@ When asked, put a password for the MySQL root. You'll need it later.
 ###  Apache config ###
 Download libreATM server
 ~~~
-    cd /root
-    git clone https://github.com/libreATM/server/
     mkdir /var/www/btc
-    mv /root/server/* /var/www/btc/
+    cd /var/www/
+    git clone https://github.com/libreATM/server/
+    mv server btc
     perl -pe 's/\*/192.168.42.45/g' /etc/apache2/ports.conf  > /tmp/p ; mv /tmp/p /etc/apache2/ports.conf
     mv /var/www/btc/libreATM.apache /etc/apache2/sites-available/libreATM
 ~~~
