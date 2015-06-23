@@ -58,13 +58,12 @@ Unlock bootloader, press the power button once to select "yes"
 fastboot oem unlock
 ~~~
 
-Sets the device to auto power on instead of charging:
+Set the device to auto power on instead of charging:
 ~~~
 fastboot oem off-mode-charge 0
 ~~~
 
-Reboot the tablet.
-
+* Reboot the tablet.
 * Settings > More > USB tethering (on)
 
 ## Browser ##
@@ -91,7 +90,7 @@ Reboot the tablet.
 ## Tests and fun ##
 * Do the [Shutdown procedure.](How_to_Power_ON_and_Shutdown_a_libreATM.md)
 * Do the [Power-ON procedure.](How_to_Power_ON_and_Shutdown_a_libreATM.md)
-* Buy some Bitcoin using fiat, send me a tip if it works ;) [14qpgjQmWSnHbrZKLTJCvhX9sCpRgr1Hw2](https://blockchain.info/address/14qpgjQmWSnHbrZKLTJCvhX9sCpRgr1Hw2)
+* Buy some Bitcoin using fiat, send me a tip if it works ;) [1NmGuvMJnQ393oz9AS7tBAvJYNNQz5TfBC](https://blockchain.info/address/1NmGuvMJnQ393oz9AS7tBAvJYNNQz5TfBC)
 
 
 ## Things that do not work ATM ##
@@ -105,7 +104,6 @@ Reboot the tablet.
 
 #### **THIS DOESN'T WORK** Automatic USB tethering using a init script ####
 * Copy this script to /data/local/userinit.sh on the tablet and do chmod 555 /data/local/userinit.sh
-
 ~~~
 #!/system/bin/sh 
 setprop sys.usb.config rndis,adb
