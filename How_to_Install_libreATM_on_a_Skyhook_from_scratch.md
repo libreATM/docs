@@ -107,14 +107,22 @@ Disconnect and try to connect again using ssh, remove the offending key line on 
 ## ATM SERVER ##
 ###  USB tethering ###
 ~~~
-    echo "
-    # USB network configuration
+    echo "auto lo
+iface lo inet loopback
+
+auto eth0
+allow-hotplug eth0
+iface eth0 inet manual
+
+# USB network configuration
+auto usb0
+allow-hotplug usb0
     iface usb0 inet static
     address 192.168.42.45
     netmask 255.255.255.0
     #gateway 192.168.42.129
     dns-nameservers 8.8.8.8
-    " >> /etc/network/interfaces
+" > /etc/network/interfaces
 ~~~
     # Enable interfaces on the correct order and do some other things at boot
 ~~~
