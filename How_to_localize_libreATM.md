@@ -10,9 +10,7 @@ Connect to the raspberry using ssh.
 * Internationalisation Options > Change Timezone
 * Internationalisation Options > Change Keyboard Layout
 * Finish
-~~~
-    reboot
-~~~
+
 ## ATM Currency ##
 Change USD to match your currency
 ~~~
@@ -23,4 +21,5 @@ Change USD to match your currency
     sed -i.eur 's/EUR/'$CURRENCY'/g' /var/www/btc/includes/PricingProviders/Kraken.php
     sed -i.eur 's/EUR/'$CURRENCY'/g' /var/www/btc/includes/PricingProviders/BitcoinAverage.php
     sed -i.eur 's/EUR/'$CURRENCY'/g' /var/www/btc/includes/PricingProviders/LocalBitcoins.php
+    reboot
 ~~~
