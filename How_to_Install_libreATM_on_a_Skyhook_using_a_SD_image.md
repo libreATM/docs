@@ -26,7 +26,7 @@ or
 
 **CHANGE** libreATM_0.1-**EUR**.img to libreATM_0.1-**USD**.img if you want the USD version.
 ~~~
-    $IMAGE=libreATM_0.1-EUR.img
+    IMAGE=libreATM_0.1-EUR.img
 # Extract the image
     7z x $IMAGE.7z
     rm $IMAGE.7z
