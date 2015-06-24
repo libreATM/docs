@@ -4,7 +4,7 @@
 
 This instructions assume that you have root access to a Linux machine and basic Linux command-line skills.
 
-It is possible to do this from Windows using Win32DiskImager to burn the image and putty to connect using ssh.
+It is possible to do this from Windows using 7-zip to extract the image, Win32DiskImager to burn it and putty to connect using ssh.
 
 ## Burning the image to the SD ##
 Insert the SD card on your computer (4Gb or more. Better if class 10).
@@ -21,9 +21,12 @@ Find the device name (examples: /dev/sdb /dev/mmcblk0 )
 # Umount all SD_CARD partitions
     mount | grep $SD_CARD | awk '{print "umount "$1}' | sh
 
-# Download and extract image:
-	IMAGE=libreATM_0.1-EUR.img
-    wget https://github.com/libreATM/libreATM-images/raw/master/libreATM-images/$IMAGE.7z
+# Download the image:
+[libreATM_0.1-**EUR**.img.7z](https://mega.nz/#!nxkCjTCL!9O3rutjtF4sw01pS-vlXWd6aQzxWJH_e6zrAMYTUTZE)
+[libreATM_0.1-**USD**.img.7z](https://mega.nz/#!f9lTSACQ!P4kZ-F3vJEVNF8gcHaYFIB2vNGI490b5mGsC3vqBJtM)
+
+# Change libreATM_0.1-EUR.img to libreATM_0.1-USD.img if needed. Extract it.
+    $IMAGE=libreATM_0.1-EUR.img
     7z x $IMAGE.7z
     rm $IMAGE.7z
 
