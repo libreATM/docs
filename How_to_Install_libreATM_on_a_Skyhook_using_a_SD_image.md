@@ -20,11 +20,11 @@ Find the device name (examples: /dev/sdb /dev/mmcblk0 )
     SD_CARD=/dev/device
 # Umount all SD_CARD partitions
     mount | grep $SD_CARD | awk '{print "umount "$1}' | sh
-
-# Download the image:
+~~~
+Download the image:
 [libreATM_0.1-**EUR**.img.7z](https://mega.nz/#!nxkCjTCL!9O3rutjtF4sw01pS-vlXWd6aQzxWJH_e6zrAMYTUTZE)
 [libreATM_0.1-**USD**.img.7z](https://mega.nz/#!f9lTSACQ!P4kZ-F3vJEVNF8gcHaYFIB2vNGI490b5mGsC3vqBJtM)
-
+~~~
 # Change libreATM_0.1-EUR.img to libreATM_0.1-USD.img if needed. Extract it.
     $IMAGE=libreATM_0.1-EUR.img
     7z x $IMAGE.7z
