@@ -14,8 +14,6 @@ Find the device name (examples: /dev/sdb /dev/mmcblk0 )
     fdisk -l | grep "Disk /dev"
 ~~~
 **CHANGE /dev/device** to the actual device name!
-
-**CHANGE** libreATM_0.1-**EUR**.img to libreATM_0.1-**USD**.img if you want the USD version.
 ~~~
     SD_CARD=/dev/device
 # Umount all SD_CARD partitions
@@ -25,9 +23,11 @@ Download your image:
 * [libreATM_0.1-**EUR**.img.7z](https://mega.nz/#!nxkCjTCL!9O3rutjtF4sw01pS-vlXWd6aQzxWJH_e6zrAMYTUTZE)
 or
 * [libreATM_0.1-**USD**.img.7z](https://mega.nz/#!f9lTSACQ!P4kZ-F3vJEVNF8gcHaYFIB2vNGI490b5mGsC3vqBJtM)
+
+**CHANGE** libreATM_0.1-**EUR**.img to libreATM_0.1-**USD**.img if you want the USD version.
 ~~~
-# Change libreATM_0.1-EUR.img to libreATM_0.1-USD.img if needed. Extract it.
     $IMAGE=libreATM_0.1-EUR.img
+# Extract the image
     7z x $IMAGE.7z
     rm $IMAGE.7z
 
